@@ -65,12 +65,5 @@ void draw() {
   image(blur_image.get_image(), 0, 0);
   blur_image.blur();
 
-  if (loops < (30 * 10 * 6)) {
-    saveFrame("fball_####.png");
-  } else {
-    println("Movie finished");
-    noLoop();
-  }
-
   loops++;
 }
